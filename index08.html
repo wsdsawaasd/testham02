@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+
+    let arr = [];
+    let x = null;
+    let numberN = prompt("input index of array");
+    for (let i = 0; i < numberN; i++) {
+        x = prompt("input number");
+        arr[i] = x
+    }
+    function swap(ar) {
+        let last = ar.length-1;
+        let first = 0;
+        while (first<last) {
+            let temp = ar[first];
+            ar[first] = ar[last];
+            ar[last] = temp;
+            first++;
+            last--
+        }
+        document.write(ar)
+    }
+    swap(arr)
+
+</script>
+</body>
+</html>

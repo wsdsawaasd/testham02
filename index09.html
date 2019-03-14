@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let x = null;
+    let numberN = prompt("input element of array");
+    for (let i = 0; i < numberN; i++) {
+        x = prompt("input number");
+        arr[i] = x
+    }
+    let time = 0;
+
+    function checkArray(ar, int) {
+        for (let i = 0; i < ar.length; i++) {
+            if (ar[i] === int) {
+                time += 1;
+            }
+        }
+        return time
+    }
+
+    let check = prompt("input random");
+    if (checkArray(arr, check)) {
+        alert(time + "")
+    } else {
+        alert(-1)
+    }
+</script>
+</body>
+</html>
